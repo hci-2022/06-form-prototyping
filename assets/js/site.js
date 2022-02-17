@@ -1,6 +1,10 @@
 'use strict';
 
+var newAccountFieldset = document.querySelector('fieldset[name="new"]');
+var newAccountCheckbox = document.querySelector('#create');
 
+newAccountFieldset.setAttribute('disabled', 'disabled');
+newAccountFieldset.setAttribute('aria-hidden', 'true');
 
 
 
