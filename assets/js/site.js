@@ -6,8 +6,16 @@ var newAccountCheckbox = document.querySelector('#create');
 newAccountFieldset.setAttribute('disabled', 'disabled');
 newAccountFieldset.setAttribute('aria-hidden', 'true');
 
+newAccountCheckbox.addEventListener('change', function(event) {
+  // Log the checkbox's checked state:
+  console.log('Checkbox is checked: ' + event.target.checked);
 
-
+  // TODO: Add logic to set values only on checked state:
+  /*
+    newAccountFieldset.removeAttribute('disabled');
+    newAccountFieldset.setAttribute('aria-hidden', 'false');
+  */
+});
 
 
 
